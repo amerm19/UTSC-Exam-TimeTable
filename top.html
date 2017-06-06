@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Name: Amer.Mohammed
+	 Student ID: 1002254552
+	 Course code: CSCB20S
+	 Creating an exam timetable webpage for courses offered by the UofT Scarborough campus.
+	 This assignment's HTML content is divided into 2 parts, top.html and bottom.html which
+	 are linked to both courses.php (i.e. homepage) and seacrh.php. The top.html contains
+	 all HTML code of the top half of the page, likewise the bottom.html contains the HTML
+	 code for bottom half of the page. -->
+<html>
+    <head>
+    	<!-- Pages title. -->
+        <title>My Exam Timetable</title>
+        <meta charset="utf-8" />
+
+        <!-- Links to provided files.  Do not change these links -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+
+        <!-- Link to your CSS file that you should edit -->
+        <link href="exams.css" type="text/css" rel="stylesheet" />
+        
+        <!-- Link tab icon to the offical UofT Logo found online. -->
+        <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Utoronto_coa.svg/1200px-Utoronto_coa.svg.png" />
+    </head>
+
+    <body>
+    	<!-- Centering all the contents of the page. -->
+    	<center>
+    	<!-- Placing all the content into the frame_top container. -->
+    		<div id="frame_top">
+    			<!-- new HTML5 page-section structure element -->
+            	<header>
+					<h2>UTSC Winter 2017 Final Exam Timetable</h2> 
+				</header>
+				
+				<!-- Creating a main container which has only the tabele in it. -->
+	    		<div id="main">
+	    			<!-- Creating the actual table. -->
+        			<table id="display">
+        				<!-- Declaring the first row, i.e. heading of each column. -->
+                		<tr>
+                			<!-- Each column heading. -->
+                			<th>Course</th>
+                			<th>Section</th>
+                			<th>Instructor</th>
+                			<th>Date</th>
+                			<th>Start</th>
+                			<th>End</th>
+                		</tr>
+                	<!-- Closing the table. -->
+             		</table>
+             	<!-- Closing the main container. -->
+        		</div>
+        	<!-- Closing the frame_top container. -->	
+        	</div>
+    	</center>
+    </body>
+</html>

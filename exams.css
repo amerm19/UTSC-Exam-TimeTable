@@ -1,0 +1,66 @@
+/**
+  * Name: Amer.Mohammed
+  * Student ID: 1002254552
+  * Course code: CSCB20S
+  * CSS file for styling courses.php and search.php, linked to the respective HTML pages.
+  * This file contains all the content styling for above mentioned pages.
+  */
+
+/* Styling for contents in the body tag; i.e. all the text etc. */
+body{
+	background-color: Gray;
+	font-family: Verdana, Tahoma, sans-serif, Arial;
+}
+/* Simple Styling for the id frame_top div. */
+#frame_top{
+	position: relative;
+	background-color: white;
+	border: 30pt solid #000066;
+	border-bottom: 0pt; 
+	padding: 15px;
+	margin: 5px;
+	margin-bottom: 0px;
+}
+/* Simple styling for the id frame_bottom div, similar to that of the top one. */
+#frame_bottom{
+	position: relative;
+	background-color: white;
+	border: 30pt solid #000066;
+	border-top: 0pt; 
+	padding: 15px;
+	padding-top: 0px;
+	margin: 5px;
+	margin-top: 0px;
+}
+/* Simple styling for the header of the page. */
+header{
+	color: #000066;
+	font-size: 15pt;
+	text-decoration: underline;
+}
+/* Simple styling for the table of the page. */
+table {
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: auto;
+	margin-right: auto;
+}
+/* Simple styling for the each row of the tabel. */
+td, th {
+    padding: 2px;
+    text-align: center;
+}
+/* Zebra Stripping; alternate row with dark and light background. For odd number of rows. */
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+/* Simple styling for the fieldset of the various input and select tags. */
+fieldset{
+	width: 70%;
+	border-radius: 10px;
+}
+/* Simple width styling for the image at the bottom of the page. */
+img{
+	width: 30%;
+}

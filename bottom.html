@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	
+    <head>
+    	<!-- Pages title. -->
+        <title>My Exam Timetable</title>
+        <meta charset="utf-8" />
+
+        <!-- Links to provided files.  Do not change these links -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+
+        <!-- Link to your CSS file that you should edit -->
+        <link href="exams.css" type="text/css" rel="stylesheet" />
+    </head>
+
+    <body>
+    	<!-- Centering all the contents of the page. -->
+    	<center>
+    		<!-- Placing all the content into the frame_bottom container. -->
+        	<div id="frame_bottom">
+        		<!-- Creating a main container which has only the tabele in it. -->
+        		<div id="main">
+        			<!-- Creating a Form to be submitted to seacrh.php through GET mehtod,
+        			 i.e. parameters passed to the URL are visible on link bar of the
+        			 browser. -->
+            		<form id="form1" method="GET" action="search.php">
+            			<!-- Creating a feild which holds the submit button and several
+            			select bars. -->
+            			<fieldset>
+            				<!-- Fieldsets heading. -->
+                			<legend> Search Exams:</legend>
+                			<!-- Drop down menu for the list of course codes in the DB. -->
+                			<select id="course_codes">
+                				<!-- First option with value NULL; discription of the drop
+                				down menu. -->
+                				<option value="NULL"> List of Course Codes in Database 
+                				</option>
+                			</select>
+                			<!-- Textbox for manually inputting the course code. -->
+                			<input id="course_name" placeholder="Course Code" type="text">
+                			<!-- Form Submission button. -->
+                			<input id="search_button" type="submit" value="Search">
+                			<!-- Drop down menu for the list of courses found given the
+                			course code; parital or full. -->
+                			<select id="courses_list">
+                				<!-- First option with value NULL; discription of the drop
+                				down menu. -->
+                				<option value="NULL"> Select A Course</option>
+                			</select>
+                			<!-- <select id="time_format">
+                			<option value="12_hour"> 12 Hour </option>
+                			<option value="24_hour"> 24 Hour </option>
+                		</select> -->
+                		<!-- Closing the fieldset. -->
+                		</fieldset>
+                	<!-- Closing the form. -->
+            		</form>
+            	<!-- Closing the main container. -->
+           		</div>
+           		<!-- Offical PNG format UofT Logo found on anna's cmslab account;
+           		linking directly to the URL. -->
+            	<img src="https://cmslab.utsc.utoronto.ca/courses/cscb20w17/bretsche/assignments/a3/utsc.png" alt="UTSC Logo">
+        	<!-- Closing the frame_bottom container. -->
+        	</div> 
+        </center>
+    </body>
+</html>
